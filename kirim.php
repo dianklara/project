@@ -26,8 +26,8 @@ $mail->Host= "smtp.gmail.com";
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587; 
 $mail->SetFrom("email@gmail.com","email sender");
-$mail->Username = "email@gmail.com";  // username gmail yang akan digunakan untuk mengirim email
-$mail->Password = "*****";  // Password email
+$mail->Username = "dianklara2@gmail.com";  // username gmail yang akan digunakan untuk mengirim email
+$mail->Password = "dianklara1406";  // Password email
 $mail->SetFrom($usermail, 'user');
 $mail->AddReplyTo($usermail,'user');
 $mail->Subject = $subject;
@@ -41,8 +41,8 @@ else
 return true;
 }
 
-$to = "emailtujuan@gmail.com"; //email tujuan
+$to = "dianklara14@gmail.com"; //email tujuan
 $subject = "New email"; // subject email
-echo"<br/><br/><center><h3>email telah terkirim</h3></center>"; 
+echo"<br/><br/><center><h3>Data telah terkirim</h3></center>"; 
 Send_Mail($to,$subject,$body);
 ?>
